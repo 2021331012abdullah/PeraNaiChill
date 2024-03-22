@@ -1,0 +1,41 @@
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+<link href="https://fonts.cdnfonts.com/css/solaimanlipi" rel="stylesheet">
+<style>
+    body {
+        color: white;
+        background-color: black;
+        font-family: 'Courier New', Courier, monospace, 'SolaimanLipi';
+    }
+</style>
+<head>
+    <title>PNC - Pera Nai Chill</title>
+  </head>
+<body>
+    <div
+        style="display: flex; align-items: center; justify-content: center; height: 100%; width: 100%; flex-direction: column;">
+        <div style="background-color: rgb(0, 0, 0); height: 60%; width: 100%; margin: 0%;">
+            <div style="display: flex; align-items: center;">
+                <div style="margin-bottom: 20px; margin-right:100px;">
+                    <div style="font-size: 20px; font-weight: bolder; margin-bottom: 10px; background: rgb(123, 0, 255);">Pera Nai Chill - প্যারা নাই চিল
+                        </div> <div style="background: white; color: black; width: fit-content;">এত ল্যাঙ্গুয়েজ শিখে কি লাভ মামা? </div>
+                </div>
+                <a style="transform: scale(0.7); position: absolute; right: 0; margin-right: 10px;" class="play-btn"
+                    id="run"></a>
+            </div>
+            <div id="container" class="container">
+                <div id="line-numbers" class="container__lines" style=" line-height: 1.7em; font-size: 1.5em;"></div>
+                <textarea spellcheck="false" id="textarea" class="container__textarea"
+                    style="padding-left: 10px; line-height: 1.7em; background-color: rgb(40, 40, 40); color: greenyellow; resize:none; width:  99%; height: 100%; font-size: 1.5em;"
+                    placeholder="write peraNaiChill code here&#10;বাংলা & Banglish are partially supported"></textarea>
+            </div>
+        </div>
+        <div id="log"
+            style="font-size: 1em; overflow: auto;  background-color: rgb(18, 0, 31); height: 40%; width: 100%; margin: 1%;"> <br/>output will be shown here
+        </div>
+    </div>
+    
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.bangla@1/dist/jquery.bangla.js"></script>
+<script src="./script.js"></script>
+<link rel="stylesheet" href="style.css">
