@@ -106,7 +106,7 @@ function run_it(){
     var src = document.getElementById('textarea').value;
 
     console.log("Transcribing your Code.. Please wait");
-  fetch("https://peranaichill-backend.vercel.app", {
+  fetch("https://peranaichill-backend.vercel.app/api", {
     headers: {
     'Accept': 'text/plain',
     'Content-Type': 'text/plain',
