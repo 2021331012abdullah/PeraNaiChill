@@ -158,14 +158,14 @@ const logger = document.getElementById('log');
 
 console.log = function (message) {
     const p = logger.appendChild(document.createElement('p'));
-    message = message.replaceAll(/(\r\n|\r|\n)/g, '<br/>');
+    if (message.replaceAll) message = message.replaceAll(/(\r\n|\r|\n)/g, '<br/>');
     p.innerHTML = message;
     p.className = 'console-output';
 };
 
 console.error = function (message) {
     const p = logger.appendChild(document.createElement('p'));
-    message = message.replaceAll(/(\r\n|\r|\n)/g, '<br/>');
+    if (message.replaceAll) message = message.replaceAll(/(\r\n|\r|\n)/g, '<br/>');
     p.innerHTML = message;
     p.style.color = 'red';
     p.className = 'console-output';
