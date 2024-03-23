@@ -141,12 +141,12 @@ function run_it(){
           root.style.setProperty('--pulsColor', 'rgba(255, 255, 255, 0.75)');
         }
         
-        }).catch((err)=>{console.error("API Error."); runButton.onclick = run_it;
+        }).catch((err)=>{console.error(err + "API Error."); runButton.onclick = run_it;
         root.style.setProperty('--playWhite', '#ffffff');});
         root.style.setProperty('--pulsColor', 'rgba(255, 255, 255, 0.75)');
     }).catch( (err)=>
 {
-    console.error('Connection Error.');
+    console.error(err + 'Connection Error.');
     runButton.onclick = run_it;
     root.style.setProperty('--playWhite', '#ffffff');
     root.style.setProperty('--pulsColor', 'rgba(255, 255, 255, 0.75)');
