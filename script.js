@@ -134,6 +134,7 @@ function run_it(){
           root.style.setProperty('--playWhite', '#ffffff');
           root.style.setProperty('--pulsColor', 'rgba(255, 255, 255, 0.75)');
         } catch (ex) {
+            console.log(ex);
             console.error("Execution Error.");
             runButton.onclick = run_it;
           root.style.setProperty('--playWhite', '#ffffff');
